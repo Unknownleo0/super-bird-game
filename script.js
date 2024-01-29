@@ -28,8 +28,8 @@ setInterval(function(){
     var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
     var cTop = -(500 - characterTop);
 
-    //game over 20- -50  als je the block aanraakt   als je ctop holetop is tussen de 120 pixel dan is het goed van 150-30 px = 120
-    if((characterTop > 480) || ((blockLeft < 20) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 120)))){
+    //game over 20- -50  als je the block aanraakt   als je ctop holetop is tussen de 120 pixel dan is het goed van 150-25 px = 125
+    if((characterTop > 480) || ((blockLeft < 20) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 125)))){
         alert("Game over. Score: " + (counter - 1) + "\nHighscore: " + highscore);
         if (counter - 1 > highscore) {
             highscore = counter - 1;
