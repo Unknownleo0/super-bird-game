@@ -94,3 +94,6 @@ function checkCookie() {
         }
     }
 }
+
+//character
+var canvas =document.querySelector('canvas');
